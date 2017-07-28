@@ -1,5 +1,5 @@
-﻿namespace ExoskeletonArmTestView {
-    partial class Form1 {
+namespace ExoskeletonArmTestView {
+    partial class ExoskeletonViewFrm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,12 +23,32 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
+            this.armView1 = new ExoskeletonArmTestView.ArmView();
+            this.SuspendLayout();
+            // 
+            // armView1
+            // 
+            this.armView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.armView1.Location = new System.Drawing.Point(0, 0);
+            this.armView1.Name = "armView1";
+            this.armView1.Size = new System.Drawing.Size(584, 561);
+            this.armView1.TabIndex = 0;
+            // 
+            // ExoskeletonViewFrm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.armView1);
+            this.Name = "ExoskeletonViewFrm";
+            this.Text = "Exoskeleton Arm Test";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private ArmView armView1;
     }
 }
 

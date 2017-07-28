@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ExoskeletonArmTestView {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class ExoskeletonViewFrm : Form {
+        public ExoskeletonViewFrm() {
             InitializeComponent();
+        }
+
+        private void ExoskeletonViewFrm_Load(object sender, EventArgs e) {
+
         }
     }
 }
